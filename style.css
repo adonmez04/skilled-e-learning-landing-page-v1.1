@@ -99,7 +99,7 @@ a {
   border-radius: 28px;
   padding: 9px 24px 11px;
 
-  transition: all 0.7s;
+  transition: all 0.3s;
 }
 
 .navigation__btn:hover,
@@ -164,7 +164,7 @@ a {
   border-radius: 31.5px;
   padding: 15px 37px 15px 38px;
 
-  transition: all 0.7s;
+  transition: all 0.3s;
 
   /* The Box Model */
   margin-bottom: 46px;
@@ -349,7 +349,7 @@ a {
   border-radius: 28px;
   padding: 9px 24px 11px;
 
-  transition: all 0.7s;
+  transition: all 0.3s;
 }
 
 .footer-navigation__btn:hover,
