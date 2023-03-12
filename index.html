@@ -1,52 +1,123 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Skilled e-learning landing page</title>
-</head>
-<body>
+    <title>Skilled e-learning landing page</title>
 
-  Get Started
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <!-- The header area -->
+    <header class="header">
+      <nav class="navigation">
+        <ul class="navigation-list">
+          <li><a href="#" class="navigation__list-item">skilled</a></li>
+          <li><a href="#" class="btn navigation__btn">Get Started</a></li>
+        </ul>
+      </nav>
+      <!-- The hero area -->
+      <section class="section-hero">
+        <div class="section-hero__content-area">
+          <h1 class="section-hero__title">Maximize skill, minimize budget</h1>
+          <p class="section-hero__description">
+            Our modern courses across a range of in-demand skills will give you
+            the knowledge you need to live the life you want.
+          </p>
+          <a href="#" class="btn section-hero__btn">Get Started</a>
+        </div>
+        <div class="section-hero__img-area">
+          <img
+            src="./assets/image-hero-desktop.png"
+            alt=""
+            class="section-hero__img"
+          />
+        </div>
+      </section>
+    </header>
+    <!-- The cards area -->
+    <main>
+      <section class="section-cards">
+        <article class="card-item-primary">
+          <h2 class="card-item-primary__title">
+            Check out our most popular courses!
+          </h2>
+        </article>
+        <!-- The iteration area -->
+        <article class="card-item">
+          <img
+            src="./assets/icon-animation.svg"
+            alt=""
+            class="card-item__icon"
+          />
+          <h3 class="card-item__title">Animation</h3>
+          <p class="card-item__description">
+            Learn the latest animation techniques to create stunning motion
+            design and captivate your audience.
+          </p>
+          <a href="" class="card-item__link">Get Started</a>
+        </article>
 
-  Maximize skill, minimize budget
+        <article class="card-item">
+          <img src="./assets/icon-design.svg" alt="" class="card-item__icon" />
+          <h3 class="card-item__title">Design</h3>
+          <p class="card-item__description">
+            Create beautiful, usable interfaces to help shape the future of how
+            the web looks.
+          </p>
+          <a href="" class="card-item__link">Get Started</a>
+        </article>
 
-  Our modern courses across a range of in-demand skills will give you the 
-  knowledge you need to live the life you want.
+        <article class="card-item">
+          <img
+            src="./assets/icon-photography.svg"
+            alt=""
+            class="card-item__icon"
+          />
+          <h3 class="card-item__title">Photography</h3>
+          <p class="card-item__description">
+            Explore critical fundamentals like lighting, composition, and focus
+            to capture exceptional photos.
+          </p>
+          <a href="" class="card-item__link">Get Started</a>
+        </article>
 
-  Get Started
+        <article class="card-item">
+          <img src="./assets/icon-crypto.svg" alt="" class="card-item__icon" />
+          <h3 class="card-item__title">Crypto</h3>
+          <p class="card-item__description">
+            All you need to know to get started investing in crypto. Go from
+            beginner to advanced with this 54 hour course.
+          </p>
+          <a href="" class="card-item__link">Get Started</a>
+        </article>
 
-  Check out our most popular courses!
-
-  Animation
-  Learn the latest animation techniques to create stunning motion 
-  design and captivate your audience.
-  Get Started
-
-  Design
-  Create beautiful, usable interfaces to help shape the future of 
-  how the web looks.
-  Get Started
-
-  Photography
-  Explore critical fundamentals like lighting, composition, and focus 
-  to capture exceptional photos.
-  Get Started
-
-  Crypto
-  All you need to know to get started investing in crypto. Go from beginner 
-  to advanced with this 54 hour course.
-  Get Started
-
-  Business
-  A step-by-step playbook to help you start, scale, and sustain your business 
-  without outside investment.
-  Get Started
-
-  Get Started
-
-</body>
+        <article class="card-item">
+          <img
+            src="./assets/icon-business.svg"
+            alt=""
+            class="card-item__icon"
+          />
+          <h3 class="card-item__title">Business</h3>
+          <p class="card-item__description">
+            A step-by-step playbook to help you start, scale, and sustain your
+            business without outside investment.
+          </p>
+          <a href="" class="card-item__link">Get Started</a>
+        </article>
+      </section>
+    </main>
+    <!-- The footer area -->
+    <footer class="footer">
+      <nav class="footer-navigation">
+        <ul class="footer-navigation-list">
+          <li><a href="#" class="footer-navigation__list-item">skilled</a></li>
+          <li>
+            <a href="#" class="btn footer-navigation__btn">Get Started</a>
+          </li>
+        </ul>
+      </nav>
+    </footer>
+  </body>
 </html>
