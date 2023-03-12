@@ -144,6 +144,11 @@ a {
   margin-bottom: 24px;
 }
 
+.space::before {
+  content: "\A";
+  white-space: pre;
+}
+
 .btn {
   /* empty */
 }
