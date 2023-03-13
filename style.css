@@ -1,8 +1,6 @@
 /* THE MOBILE FIRST SOLUTION */
 /* Under the 700px */
 
-/* font-family: 'Plus Jakarta Sans', sans-serif; */
-
 /********************/
 /* Global Style */
 /********************/
@@ -46,11 +44,11 @@ a {
 /**********************/
 
 .header {
-  padding-top: 16px;
+  /* The Initial Value */
   max-width: 375px;
-
   /* The Box Model */
-  margin-bottom: calc(66px + 1px);
+  padding-top: 16px;
+  margin-bottom: calc(66px);
 }
 
 .navigation {
@@ -63,7 +61,6 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
-
   /* The Misc */
   list-style-type: none;
 }
@@ -79,10 +76,6 @@ a {
   text-decoration: none;
 }
 
-.btn {
-  /* empty */
-}
-
 .navigation__btn:link,
 .navigation__btn:visited {
   /* The Typography */
@@ -92,13 +85,12 @@ a {
   font-size: 16px;
   line-height: 28px;
   text-decoration: none;
-
-  /* Button */
+  /* The Background */
   color: #ffffff;
   background: #13183f;
   border-radius: 28px;
   padding: 9px 24px 11px;
-
+  /* The Animation */
   transition: all 0.3s;
 }
 
@@ -111,11 +103,12 @@ a {
 /**********************/
 
 .section-hero {
-  /* empty */
-}
-
-.section-hero__content-area {
-  /* empty */
+  /* The Flexbox */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: calc(46px);
 }
 
 .section-hero__title {
@@ -126,8 +119,8 @@ a {
   font-size: 40px;
   line-height: 50px;
   color: #13183f;
-
   /* The Box Model */
+  padding-bottom: 1px;
   margin-bottom: 26px;
 }
 
@@ -139,18 +132,13 @@ a {
   font-size: 16px;
   line-height: 26px;
   color: #83869a;
-
   /* The Box Model */
-  margin-bottom: 24px;
+  margin-bottom: calc(24px);
 }
 
 .space::before {
   content: "\A";
   white-space: pre;
-}
-
-.btn {
-  /* empty */
 }
 
 .section-hero__btn:link,
@@ -163,20 +151,17 @@ a {
   line-height: 26px;
   color: #ffffff;
   text-decoration: none;
-
-  /* Button */
+  /* The Background */
   background: linear-gradient(180deg, #ff6f48 0%, #f02aa6 100%);
   border-radius: 31.5px;
   padding: 15px 37px 15px 38px;
-
+  /* The Animation */
   transition: all 0.3s;
-
-  /* The Box Model */
-  margin-bottom: 46px;
 }
 
 .section-hero__btn:hover,
 .section-hero__btn:active {
+  /* The Background */
   background: linear-gradient(
       0deg,
       rgba(255, 255, 255, 0.5),
@@ -186,14 +171,15 @@ a {
 }
 
 .section-hero__img-area {
+  /* The Display */
   width: 100%;
-
   /* The Box Model */
   margin-right: 8px;
   margin-left: 8px;
 }
 
 .section-hero__img {
+  /* The Display */
   display: block;
   max-width: 100%;
 }
@@ -202,11 +188,11 @@ a {
 /**********************/
 
 .section-cards {
-  /* The Box Model */
+  /* The Initial Value */
   max-width: 375px;
-  padding-bottom: calc(80px + 2px);
-
-  /* The Box Shadow */
+  /* The Box Model */
+  padding-bottom: calc(80px);
+  /* The Background */
   background: linear-gradient(180deg, #ffffff 0%, #f0f1ff 100%);
 }
 
@@ -219,10 +205,6 @@ a {
   gap: 40px;
 }
 
-.card-item-primary {
-  /* empty */
-}
-
 .card-item-primary__title {
   /* The Typography */
   font-family: "Plus Jakarta Sans";
@@ -231,8 +213,7 @@ a {
   font-size: 24px;
   line-height: 32px;
   color: #ffffff;
-
-  /* Button */
+  /* The Background */
   background: linear-gradient(180deg, #ff6f48 0%, #f02aa6 100%);
   border-radius: 10px;
   padding: 24px 29px 32px 28px;
@@ -242,20 +223,17 @@ a {
 /**********************/
 
 .card-item {
-  /* The Box Shadow */
+  /* The Background */
   background: #ffffff;
   box-shadow: 0px 25px 50px rgba(6, 22, 141, 0.0442381);
   border-radius: 10px;
-
   /* The Box Model */
-  padding: 0 29px 29px 28px;
+  padding: 0 29px calc(29px + 0.224px) 28px;
 }
 
 .card-item__icon {
   /* The Positioning */
-  transform: translate(0, -42%);
-  /* The Box Model */
-  margin-bottom: -2px;
+  transform: translate(0, calc(-50% + 8%));
 }
 
 .card-item__title {
@@ -267,6 +245,7 @@ a {
   line-height: 25px;
   color: #13183f;
   /* The Box Model */
+  margin-top: -2px;
   margin-bottom: 16px;
 }
 
@@ -292,7 +271,7 @@ a {
   line-height: 28px;
   color: #f74780;
   text-decoration: none;
-
+  /* The Animation */
   transition: all 0.3s;
 }
 
@@ -305,13 +284,12 @@ a {
 /**********************/
 
 .footer {
-  background: #13183f;
+  /* The Initial Value */
   max-width: 375px;
+  /* The Box Model */
   padding: 36px 0;
-}
-
-.footer-navigation {
-  /* empty */
+  /* The Background */
+  background: #13183f;
 }
 
 .footer-navigation-list {
@@ -334,10 +312,6 @@ a {
   text-decoration: none;
 }
 
-.btn {
-  /* empty */
-}
-
 .footer-navigation__btn:link,
 .footer-navigation__btn:visited {
   /* The Typography */
@@ -348,17 +322,17 @@ a {
   line-height: 28px;
   color: #ffffff;
   text-decoration: none;
-
-  /* The Button */
+  /* The Background */
   background: linear-gradient(180deg, #4851ff 0%, #f02aa6 100%);
   border-radius: 28px;
   padding: 9px 24px 11px;
-
+  /* The Animation */
   transition: all 0.3s;
 }
 
 .footer-navigation__btn:hover,
 .footer-navigation__btn:active {
+  /* The Background */
   background: linear-gradient(
       0deg,
       rgba(255, 255, 255, 0.5),
@@ -366,3 +340,11 @@ a {
     ),
     linear-gradient(180deg, #4851ff -54.32%, #f02aa6 100%);
 }
+
+/* The unused classes */
+/*************************/
+
+/* .btn {} */
+/* .footer-navigation {} */
+/* .card-item-primary {} */
+/* .section-hero__content-area {} */
