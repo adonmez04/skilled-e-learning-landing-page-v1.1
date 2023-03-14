@@ -1,0 +1,139 @@
+/* THE SETTINGS FOR TABLETS */
+/* Under the 700px */
+
+@media (min-width: 400px) {
+  /********************/
+  /* Global Style */
+  /********************/
+
+  .container {
+    width: 89.713541667%; /* -> for the content area 689px */
+    margin-top: 0;
+    margin-right: calc(
+      ((100% - 89.713541667%) / 2) + 0.066145833%
+    ); /* -> for margin-right: 39px */
+    margin-bottom: 0;
+    margin-left: calc(
+      ((100% - 89.713541667%) / 2) - 0.0640625%
+    ); /* -> for margin-left: 40px */
+
+    /* background-color: red; */
+  }
+
+  /********************/
+  /* Component Style */
+  /********************/
+
+  /* The header area */
+  /**********************/
+
+  .header {
+    /* The Initial Value */
+    min-width: 768px;
+    /* The Box Model */
+    padding-top: 24px;
+    /* The Box Model */
+    margin-bottom: 123px;
+  }
+
+  .navigation {
+    /* The Box Model */
+    margin-bottom: 36px;
+  }
+
+  /* The hero area */
+  /**********************/
+
+  .section-hero {
+    /* The Grid Template */
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    column-gap: 10px;
+    align-content: center;
+  }
+
+  .section-hero__content-area {
+    /* The Grid */
+    grid-column: 1/8;
+    /* The Box Model */
+    margin-top: 65px;
+  }
+
+  .section-hero__title {
+    /* The Box Model */
+    margin-bottom: 25px;
+  }
+  .section-hero__description {
+    /* The Box Model */
+    margin-bottom: calc(24px - 2px);
+  }
+
+  .space::before {
+    content: "";
+  }
+
+  .section-hero__img-area {
+    /* The Grid */
+    grid-column: 8/13;
+    /* The Box Model */
+    margin-right: 0px;
+    margin-left: 0px;
+    /* The Positioning */
+    transform: translate(-76px, -108px);
+  }
+
+  /* The cards area */
+  /**********************/
+
+  .section-cards {
+    /* The Initial Value */
+    max-width: 768px;
+    /* The Box Model */
+    padding-bottom: calc(86px);
+    /* The Background */
+    background: linear-gradient(180deg, #ffffff 0%, #f0f1ff 100%);
+  }
+  .section-cards-layout {
+    /* The Grid Template */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    column-gap: 11px;
+    row-gap: calc(56px - 3px);
+  }
+
+  .card-item-primary {
+    /* The Box Model */
+    padding: 56px 0 139px 0;
+    background-color: red;
+  }
+
+  .card-item-primary__title {
+    /* The Box Model */
+    width: 81.120943953%; /* -> margin-left: 32px*/
+    margin: 0 auto;
+  }
+
+  .card-item {
+    /* The Box Model */
+    padding: 0 21px 32px 32px;
+  }
+
+  .card-item__title {
+    /* The Box Model */
+    margin-top: -2px;
+    margin-bottom: 16px;
+  }
+
+  /* The footer area */
+  /**********************/
+
+  .footer {
+    /* The Initial Value */
+    max-width: 768px;
+    /* The Box Model */
+    padding: 36px 0;
+    /* The Background */
+    background: #13183f;
+  }
+}

@@ -14,6 +14,7 @@
     <title>Skilled e-learning landing page</title>
 
     <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./css/medium-media-query.css" />
   </head>
   <body>
     <!-- The header area -->
@@ -37,7 +38,21 @@
             <a href="#" class="btn section-hero__btn">Get Started</a>
           </div>
           <div class="section-hero__img-area">
-            <img src="./assets/group-9.png" alt="" class="section-hero__img" />
+            <picture>
+              <source
+                media="(max-width: 375px)"
+                srcset="./assets/image-hero-mobile-new.png"
+              />
+              <source
+                media="(min-width: 400px)"
+                srcset="./assets/image-hero-tablet-new.png"
+              />
+              <source
+                media="(min-width: 1440px)"
+                srcset="./assets/image-hero-desktop-new.png"
+              />
+              <img src="./assets/image-hero-mobile-new.png" alt="" />
+            </picture>
           </div>
         </section>
       </div>
@@ -47,7 +62,7 @@
     <main>
       <section class="section-cards">
         <div class="container">
-          <div class="section-cards-flex">
+          <div class="section-cards-layout">
             <article class="card-item-primary">
               <h2 class="card-item-primary__title">
                 Check out our most popular courses!
