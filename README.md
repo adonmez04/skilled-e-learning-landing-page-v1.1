@@ -4,7 +4,9 @@
 
 ## Welcome! 👋
 
-Welcome to my solution page. I hope you'll find some good implemantions for this project here.
+Unfortunately, this project failed because of unreadable code.
+I'll try to solve this problem with another version.
+Please check the latest version of the project for a better and complete solution.
 
 ![skilled-e-learning-landing-page-v1.1](./design/preview.jpg)
 
